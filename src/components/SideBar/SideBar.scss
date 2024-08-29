@@ -1,3 +1,21 @@
 .SideBar {
-
+	position: fixed;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	z-index: 10;
+}
+.BackGroundOverLay {
+	position: absolute;
+	inset: 0;
+	background-color: rgb(55, 55, 55);
+	opacity: 0.5;
+	cont
+}
+.SideBarContent {
+	z-index: 15;
+	position: relative;
+	display: flex;
+	height: 80%;
+	width: 90%;
 }
