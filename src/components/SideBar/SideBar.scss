@@ -7,9 +7,9 @@
 }
 .BackGroundOverLay {
 	position: absolute;
-	inset: 0;
-	background-color: rgb(55, 55, 55);
-	opacity: 0.5;
+  inset: 0;
+  background: black;
+  opacity: 0.6;
 }
 
 
@@ -37,6 +37,13 @@
 	border: none;
 	outline: none;
 	margin-right: auto;
+	cursor: pointer;
+	transition-duration: 300ms;
+	padding: 1rem;
+}
+
+.SideBarContent button:hover {
+	opacity: 0.6;
 }
 
 @media (min-width: 640px) {

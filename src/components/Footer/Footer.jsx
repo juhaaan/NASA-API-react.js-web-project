@@ -1,15 +1,16 @@
 import "./Footer.scss"
 
-export default function Footer() {
+export default function Footer({handleClick, data}) {
+
+
 	return (
 		<footer>
 			<div>
 				<h2>
-					Brutal mars
+					{data?.title}
 				</h2>
-				<h1>Apod project</h1>
 			</div>
-			<button>
+			<button onClick={()=> {handleClick()}}>
 			<i className="fa-solid fa-circle-info"></i>
 			</button>
 		</footer>

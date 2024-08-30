@@ -1,16 +1,15 @@
 import "./SideBar.scss"
 
-export default function SideBar() {
+export default function SideBar({handleClick, data}) {
 	return (
 		<div className='SideBar'>
 			<div className='BackGroundOverLay'></div>
 			<div className='SideBarContent'>
-				<h2>Mars landscape</h2>
+				<h2>{data?.title}</h2>
 				<div>
-					<p>discription</p>
-					<p>something in the way</p>
+					<p>{data?.explanation}</p>
 				</div>
-				<button>
+				<button onClick={()=> handleClick()}>
 				<i className="fa-solid fa-right-long"></i>
 				</button>
 			</div>
